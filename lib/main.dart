@@ -109,6 +109,71 @@ class _QuizPageState extends State<QuizPage> {
       ],
       'correctAnswer': 'Leonardo da Vinci',
     },
+    {
+      'questionText': 'What is the capital of Japan?',
+      'answers': ['Seoul', 'Beijing', 'Tokyo', 'Bangkok'],
+      'correctAnswer': 'Tokyo',
+    },
+    {
+      'questionText': 'Who wrote "To Kill a Mockingbird"?',
+      'answers': ['J.K. Rowling', 'Stephen King', 'Harper Lee', 'Mark Twain'],
+      'correctAnswer': 'Harper Lee',
+    },
+    {
+      'questionText': 'What is the largest mammal in the world?',
+      'answers': ['Elephant', 'Blue Whale', 'Giraffe', 'Hippopotamus'],
+      'correctAnswer': 'Blue Whale',
+    },
+    {
+      'questionText': 'What is the chemical symbol for gold?',
+      'answers': ['Au', 'Ag', 'Hg', 'Pb'],
+      'correctAnswer': 'Au',
+    },
+    {
+      'questionText': 'Who painted "The Starry Night"?',
+      'answers': [
+        'Leonardo da Vinci',
+        'Vincent van Gogh',
+        'Pablo Picasso',
+        'Claude Monet'
+      ],
+      'correctAnswer': 'Vincent van Gogh',
+    },
+    {
+      'questionText': 'What is the currency of Russia?',
+      'answers': ['Euro', 'Dollar', 'Ruble', 'Pound'],
+      'correctAnswer': 'Ruble',
+    },
+    {
+      'questionText': 'Who invented the telephone?',
+      'answers': [
+        'Thomas Edison',
+        'Nikola Tesla',
+        'Alexander Graham Bell',
+        'Albert Einstein'
+      ],
+      'correctAnswer': 'Alexander Graham Bell',
+    },
+    {
+      'questionText': 'What is the capital of Australia?',
+      'answers': ['Sydney', 'Melbourne', 'Canberra', 'Perth'],
+      'correctAnswer': 'Canberra',
+    },
+    {
+      'questionText': 'What is the tallest mountain in the world?',
+      'answers': ['Mount Everest', 'K2', 'Kangchenjunga', 'Lhotse'],
+      'correctAnswer': 'Mount Everest',
+    },
+    {
+      'questionText': 'Who wrote "The Great Gatsby"?',
+      'answers': [
+        'F. Scott Fitzgerald',
+        'Ernest Hemingway',
+        'William Faulkner',
+        'John Steinbeck'
+      ],
+      'correctAnswer': 'F. Scott Fitzgerald',
+    }
   ];
 
   @override
@@ -193,7 +258,7 @@ class _QuizPageState extends State<QuizPage> {
                   Row(
                     children: [
                       Icon(Icons.star),
-                      Text('$_questionIndex/10'),
+                      Text('$_questionIndex/20'),
                     ],
                   ),
                   Row(
@@ -309,7 +374,7 @@ class ScorePage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text(
-              'Correct Answers: $score out of 10',
+              'Correct Answers: $score out of 20',
               style: TextStyle(fontSize: 24),
             ),
             ElevatedButton(
